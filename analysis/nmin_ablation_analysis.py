@@ -119,7 +119,7 @@ def plot_ablation_curve(results, uniform_ppl, output_dir):
 
     ax.set_xlabel(r"$n_{\min}$ (minimum source count)", fontsize=11)
     ax.set_ylabel("Perplexity (↓ better)", fontsize=11)
-    ax.set_title(r"$n_{\min}$ Ablation — Provenance Weight Training", fontsize=12, pad=10)
+    ax.set_title(r"$n_{\min}$ Ablation — Detect-and-Reweight", fontsize=12, pad=10)
     ax.set_xticks(nmins)
     ax.legend(fontsize=9, loc="upper left")
 

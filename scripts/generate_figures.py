@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate publication-ready figures for Provenance Weight Training paper."""
+"""Generate publication-ready figures for Detect-and-Reweight paper."""
 import json
 import os
 import sys

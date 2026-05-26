@@ -1,5 +1,5 @@
 #!/bin/bash
-# MVP Pipeline: Convergence-Informed Provenance Weighting
+# MVP Pipeline: Detect-and-Reweight for Synthetic Contamination
 #
 # Full pipeline: data gen -> detection -> pretraining -> eval -> comparison
 #
@@ -61,7 +61,7 @@ SYNTH_TOKENS=$(python3 -c "print(int($NUM_TOKENS * $CONTAMINATION_RATIO))")
 HUMAN_TOKENS=$(python3 -c "print(int($NUM_TOKENS * (1.0 - $CONTAMINATION_RATIO)))")
 
 echo "============================================================"
-echo "  MVP Pipeline: Convergence-Informed Provenance Weighting"
+echo "  MVP Pipeline: Detect-and-Reweight for Synthetic Contamination"
 echo "============================================================"
 echo "  Output dir:          $OUTPUT_DIR"
 echo "  Total tokens:        $NUM_TOKENS"
