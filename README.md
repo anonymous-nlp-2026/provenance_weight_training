@@ -1,6 +1,10 @@
-# Provenance Weight Training
+# When Does Detect-and-Reweight Work for Synthetic Contamination?
 
-Code for the paper "When Does Detect-and-Reweight Work? Epoch Confounds and Adaptive Reweighting in Continued LM Pretraining"
+Code for anonymous EMNLP 2026 submission.
+
+## Abstract
+
+As synthetic text pervades web corpora, detect-and-reweight methods that downweight likely-synthetic samples during training have emerged to prevent model collapse, yet when they actually help remains unclear. We investigate this question through controlled continued-pretraining experiments (Qwen3-0.6B, 132M tokens, 5 seeds) and identify three effectiveness conditions. First, detect-and-remove (D&R) outperforms all reweighting methods in our setting; epoch-matched controls attribute over 95% of the advantage to multi-epoch exposure on filtered data, identifying the mechanism behind D&R's effectiveness. Second, the detector must provide both sufficient discrimination and good calibration; high-AUC detectors with poor calibration degrade performance below uniform training. Third, minimum intervention, applying the smallest reweighting exponent that meets a quality floor, outperforms unconstrained weight maximization. As an illustrative application of the minimum-intervention principle, we derive a dual-constrained adaptive exponent b\* that improves over uniform training at contamination ratios rho >= 0.4, reaching conventional significance after multiple-comparison correction, while requiring no per-model tuning. These findings apply within our self-contamination setup at 0.6B scale; generalization to cross-model contamination and larger models remains to be established.
 
 ## Requirements
 
